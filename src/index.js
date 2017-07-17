@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import 'typeface-roboto'
 
-import App from './components';
+import Root from './components/Root';
+import './reset.scss';
 
 injectTapEventPlugin();
-ReactDOM.render(<App />, document.getElementById('app'));
+const appContainer = document.getElementById('app');
+ReactDOM.render(<Root />, appContainer);
